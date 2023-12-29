@@ -1,0 +1,335 @@
+.navbar h1{
+    color: black;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li:after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFD700;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.beginning-img img{
+width: 100%;
+height: 400px;
+}
+
+.contact-form{
+width: 60%;
+margin: 0 auto;
+margin-top: 130px;
+}
+
+.contactForm-content{
+display: flex;
+gap: 35%;
+}
+
+.contactForm-content input{
+border: none;
+border-bottom: 1px solid black;
+width:250%;
+margin-bottom: 20px;
+}
+
+.contact-form textarea{
+border: none;
+border-bottom: 1px solid black;
+width:100%;
+height: 6vh;
+}
+
+.contact-form button{
+margin-top: 30px;
+border: none;
+border: 1px solid #DACDBC;
+width: 200px;
+height: 50px;
+background: transparent;
+color: #DACDBC;
+position: relative;
+left: 40%;
+}
+
+.contact-form button:hover{ 
+border: none;
+background: #DACDBC;
+color:#fff;
+transition: 0.3s ease-in-out;
+}
+
+.offices{
+width: 100%;
+height: 60vh;
+margin-top: 110px;
+background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(furniture22.jpg);
+background-size: cover;
+background-position: center;		
+}
+
+.office-content{
+width: 70%;
+margin: 0 auto;
+color: #fff;
+display: flex;
+gap: 10%;
+position: relative;
+top: 35%;
+}
+
+.ending-details{
+    height: 50vh;
+    background: #1A1A1A;
+}
+
+.ending-detailsContent{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    padding: 70px;
+}
+
+.ending-detailsContent p{
+    color: #656765;
+}
+
+.ending-detailsContent h4{
+    color: #fff;
+}
+
+.ending-detailsContent input{
+    border: none;
+    border-bottom: 1px solid #656765;
+    padding-bottom: 6px;
+    background: transparent;
+}
+
+.ending-detailsContent .submit-button{
+    margin-top: 10px;
+    border: none;
+    border: 1px solid #DACDBC;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    color: #DACDBC;
+}
+
+.ending-detailsContent .submit-button:hover{
+border: none;
+background: #DACDBC;
+color:#fff;
+transition: 0.3s ease-in-out;
+}
+
+.accordion{
+    width: 100%;
+   }
+
+.accordion-item{
+    background: none !important;
+    border: none !important;
+    color: #656765 !important;
+}
+
+.accordion-button{
+    background: none !important;
+    border: none !important;
+    color: #656765 !important;
+}
+
+.accordion-button:focus{
+    color: #fff !important;
+}
+
+/* desktop screens resolution 1366 x 768 */
+@media screen and (width: 1366px) and (height: 768px) {
+.office-content{
+width: 77%;
+}
+
+.office-content h1{
+font-size: 38px;
+}
+
+.contact-form{
+width: 77%;
+}
+
+.contactForm-content input{
+width: 264%;
+}
+
+.ending-details{
+height: 53vh;
+}
+
+.ending-detailsContent{
+width: 95%;
+gap: 80px;
+} 
+}
+
+/* desktop large screens  1280px x 1024px */
+@media screen and (width: 1280px) and (height: 1024px) {
+.office-content{
+width: 79%;
+}
+
+.office-content h1{
+font-size: 36px;
+}
+
+.contact-form{
+width: 79%;
+}
+
+.contactForm-content input{
+width: 254%;
+}
+
+.ending-details{
+height: 43vh;
+}
+
+.ending-detailsContent{
+width: 95%;
+gap: 80px;
+} 
+}
+
+/* desktop screens resolution 1920 x 1080 */
+@media screen and (width: 1920px) and (height: 1080px) {
+.navbar li{
+font-size: 25px;
+}
+
+.contact-form h3{
+font-size: 43px;
+}
+
+.contactForm-content input{
+width: 206%;
+font-size: 24px;
+}
+
+.contact-form textarea{ 
+font-size: 24px;
+width: 109%;
+}
+
+.office-content{
+width: 79%;
+}
+
+.office-content h1{
+font-size: 47px;
+}
+
+.office-content p{
+font-size: 24px;
+}
+
+.ending-details{
+      height: 40vh;
+}
+
+.ending-detailsContent{
+width: 97%;
+    gap: 180px ;	
+}
+
+.ending-detailsContent h1{
+font-size: 53px;
+}
+
+.ending-detailsContent h4{
+font-size: 33px;
+}
+
+.ending-detailsContent p{
+font-size: 24px;
+}
+
+.ending-detailsContent .submit-button{
+width: 300px;
+height: 70px;
+font-size: 25px;
+}
+
+.ending-detailsContent input{
+width: 300px;
+font-size: 25px;
+}
+}
+
+/* desktop screens resolution 1440 x 900 */
+@media screen and (width: 1440px) and (height: 900px) {
+.navbar li{
+font-size: 22px;
+}
+
+.office-content{
+width: 77%;
+}
+
+.office-content h1{
+font-size: 38px;
+}
+
+.contact-form{
+width: 77%;
+}
+
+.contactForm-content input{
+font-size: 20px;
+width: 210%;
+}
+
+.ending-details{
+height: 44vh;
+}
+
+.ending-detailsContent{
+width: 95%;
+gap: 80px;
+} 
+
+.ending-detailsContent .submit-button{
+width: 300px;
+}
+
+.ending-detailsContent input{
+width: 300px;
+}
+}
